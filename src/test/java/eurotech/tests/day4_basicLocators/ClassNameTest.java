@@ -23,7 +23,7 @@ public class ClassNameTest {
         String text = driver.findElement(By.className("my-2")).getText();
         System.out.println("text = " + text);
 
-        driver.close();
+        //driver.close();
 
 
     }

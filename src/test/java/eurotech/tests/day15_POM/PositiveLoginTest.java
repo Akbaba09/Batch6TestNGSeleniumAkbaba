@@ -43,4 +43,12 @@ public class PositiveLoginTest extends TestBase {
 
 
     }
+    @Test
+    public void loginWithLoginAsStudentMethod() throws InterruptedException {
+        driver.get(ConfigurationReader.get("url"));
+        loginPage.loginAsStudent();
+        Thread.sleep(2000);
+        Assert.assertEquals(driver.getCurrentUrl(), "http://eurotech.study/dashboard", "Verifying that user successfully logged in");
+    }
+
 }

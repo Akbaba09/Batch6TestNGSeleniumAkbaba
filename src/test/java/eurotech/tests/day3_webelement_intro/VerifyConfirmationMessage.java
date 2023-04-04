@@ -12,7 +12,7 @@ public class VerifyConfirmationMessage {
         //enter valid credentials "eurotech@gmail.com", "Test12345!"
         //verify that confirmation message is "Welcome Teacher"
 
-        WebDriver driver = WebDriverFactory.getDriver("firefox");
+        WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.get("http://www.eurotech.study/login");
         Thread.sleep(1000);
 

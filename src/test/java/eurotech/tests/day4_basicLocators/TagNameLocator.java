@@ -19,7 +19,7 @@ public class TagNameLocator {
         System.out.println(driver.findElement(By.tagName("h2")).getText());
 
         Thread.sleep(2000);
-        driver.close();
+       // driver.close();
 
 
 

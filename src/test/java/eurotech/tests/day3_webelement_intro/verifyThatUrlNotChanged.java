@@ -7,12 +7,12 @@ import org.openqa.selenium.WebElement;
 
 public class verifyThatUrlNotChanged {
     public static void main(String[] args) throws InterruptedException {
-        //open chrome browser
+        //open Chrome browser
         // go to http://eurotech.study/login
         //click login button
         //verify that URL not changed
 
-        WebDriver driver = WebDriverFactory.getDriver("firefox");
+        WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.get("http://eurotech.study/login");
         Thread.sleep(2000);
         WebElement understandBtn = driver.findElement(By.id("rcc-confirm-button"));

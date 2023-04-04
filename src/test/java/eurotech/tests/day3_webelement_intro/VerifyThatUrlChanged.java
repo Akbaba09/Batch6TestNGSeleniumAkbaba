@@ -13,7 +13,7 @@ public class VerifyThatUrlChanged {
         //click login button
         //verify that URL has changed
 
-        WebDriver driver = WebDriverFactory.getDriver("firefox");
+        WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.get("http://eurotech.study/login");
         Thread.sleep(2000);
 
@@ -35,6 +35,10 @@ public class VerifyThatUrlChanged {
         String expectedUrl ="http://eurotech.study/dashboard";
         String actualUrl = driver.getCurrentUrl();
 
+        Thread.sleep(2000);
+
+        System.out.println("driver.getCurrentUrl() = " + driver.getCurrentUrl());
+
         if(expectedUrl.equals((actualUrl))){
             System.out.println("passed");
         }else{
@@ -42,8 +46,8 @@ public class VerifyThatUrlChanged {
         }
 
 
-//        Thread.sleep(2000);
-//        driver.close();
+        Thread.sleep(2000);
+       driver.close();
 
 
 

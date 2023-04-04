@@ -17,10 +17,17 @@ public class OpenBrowser {
 //        driver.get("https://www.amazon.de/");
 //        driver.close();
 //
-        WebDriverManager.firefoxdriver().setup();
-        WebDriver driver1 = new FirefoxDriver();
-        driver1.get("https://www.amazon.de/");
-        driver1.close();
+//        WebDriverManager.firefoxdriver().setup();
+//        WebDriver driver1 = new FirefoxDriver();
+//        driver1.get("https://www.amazon.de/");
+//        driver1.close();
+
+
+
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.amazon.de/");
+        driver.close();
 //
 //        WebDriverManager.edgedriver().setup();
 //        WebDriver driver2 = new EdgeDriver();

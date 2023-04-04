@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class IdLocatorTest {
     public static void main(String[] args) throws InterruptedException {
        WebDriver driver = WebDriverFactory.getDriver("chrome");
@@ -24,10 +26,10 @@ public class IdLocatorTest {
 
 
         driver.get("https://www.amazon.de/");
-        driver.findElement(By.xpath("https://www.amazon.de/"));
+        WebElement cookie = driver.findElement(By.id("sp-cc-accept"));
+        cookie.click();
 
-
-
+        driver.findElement(By.id("id=\"nav-link-accountList-nav-line-1\"")).click();
 
 
 
